@@ -1,17 +1,17 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
+import Vue from "vue";
+import Vuex, { Store } from "vuex";
+import SymbolsModule from "./modules/symbols";
+import PortfolioModule from "./modules/portfolio";
+import GlobalModule from "./modules/global";
 
-Vue.use(Vuex)
+Vue.use(Vuex);
 
-export default new Vuex.Store({
-  state: {
-  },
-  getters: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
+const store = new Store({
   modules: {
-  }
-})
+    symbols: SymbolsModule,
+    portfolio: PortfolioModule,
+    global: GlobalModule,
+  },
+});
+
+export default store;
