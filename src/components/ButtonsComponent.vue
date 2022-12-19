@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="flex flex-col ml-3 gap-1 sm:flex-row">
     <button
-      class="focus:outline-none text-black bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm p-3 mr-3"
+      class="focus:outline-none text-black bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm p-3 sm:mr-3"
       :disabled="qty === 0"
       @click="
         updateSymbol({

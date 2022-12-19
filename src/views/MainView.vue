@@ -4,7 +4,7 @@
       <StockModal v-show="isModalOpen" :symbols="symbols" />
     </Transition>
     <div class="container mx-auto flex flex-col">
-      <div class="button-container w-100 border-b border-white py-6">
+      <div class="button-container w-100 border-b border-white p-6 lg:py-6">
         <button
           class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-3"
           @click="showModal"
@@ -18,7 +18,9 @@
           Refresh
         </button>
       </div>
-      <div class="stock-container flex h-[95%] grow overflow-hidden">
+      <div
+        class="stock-container flex flex-col h-[95%] grow overflow-y-scroll lg:flex-row lg:overflow-hidden"
+      >
         <div class="stock flex-1 border-r border-white p-3 mt-5">
           <template v-if="portfolio.length === 0">
             <div class="flex items-center justify-center">

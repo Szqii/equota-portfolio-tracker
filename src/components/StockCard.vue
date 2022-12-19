@@ -3,7 +3,7 @@
     class="symbol-card text-white border-b p-3 flex justify-between items-center w-full"
   >
     <div class="symbol-desc flex flex-col">
-      <div class="flex gap-2">
+      <div class="flex flex-col gap-2 text-sm sm:text-md sm:flex-row">
         <h3>{{ symbol.symbol }} -</h3>
         <h4 v-if="weightedAvgPrice">
           {{ symbol.lastPrice }} - {{ symbol.weightedAvgPrice }}
@@ -12,15 +12,15 @@
       <span>Current quantity: {{ symbol.qty ? symbol.qty : 0 }}</span>
     </div>
 
-    <div class="flex justify-end">
+    <div class="flex justify-end items-center">
       <input
         type="number"
-        class="outline-none p-2 bg-transparent border border-white rounded w-1/4"
+        class="outline-none p-2 bg-transparent border border-white rounded w-1/4 max-h-11"
         :min="1"
         placeholder="Quantity"
         v-model.number="qty"
       />
-      <div class="flex ml-3 gap-3">
+      <div class="">
         <AddButton v-if="add" :qty="qty" :symbol="symbol" />
         <ButtonsComponent v-else :qty="qty" :symbol="symbol" />
       </div>

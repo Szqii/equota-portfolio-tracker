@@ -2,7 +2,7 @@
   <div class="h-full flex items-center justify-center">
     <Pie :data="chartData" v-if="pieChartToggle" />
     <Bar :data="chartData" v-else />
-    <div class="absolute bottom-10 left-10 flex items-center">
+    <div class="absolute lg:bottom-10 bottom-0 left-10 flex items-center">
       <span class="mr-3 text-sm font-medium text-gray-900 dark:text-gray-300"
         >Bar Chart</span
       >

@@ -1,6 +1,6 @@
 <template>
   <button
-    class="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4focus:ring-green-300 font-medium rounded-lg text-sm p-3"
+    class="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4focus:ring-green-300 font-medium rounded-lg text-sm p-3 ml-3"
     :disabled="qty === 0"
     @click="addSymbol({ symbol, qty })"
   >

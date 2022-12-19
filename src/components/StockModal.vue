@@ -1,6 +1,6 @@
 <template>
   <div
-    class="container absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#053241] p-10 flex flex-col gap-5 items-center z-10"
+    class="container absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#053241] md:p-10 flex flex-col gap-5 items-center z-10"
   >
     <h2 class="text-white text-2xl">Add Stock</h2>
     <div
